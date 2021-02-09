@@ -19,6 +19,7 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:4.9.0"
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'no.tornado:tornadofx:1.7.20'
+    implementation 'org.commonmark:commonmark:0.17.1'
 }
 
 javafx {
@@ -37,7 +38,6 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions.jvmTarget = "11"
 }
-
 
 test {
     useJUnitPlatform()
