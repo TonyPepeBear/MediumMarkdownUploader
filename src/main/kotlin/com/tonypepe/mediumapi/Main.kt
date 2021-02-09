@@ -4,13 +4,19 @@ import com.tonypepe.mediumapi.api.MediumApiPost
 import com.tonypepe.mediumapi.api.newPost
 import javafx.beans.property.SimpleStringProperty
 import javafx.scene.control.Alert
+import javafx.stage.Stage
 import tornadofx.*
 
 fun main() {
     launch<MyApp>()
 }
 
-class MyApp() : App(Root::class)
+class MyApp() : App(Root::class) {
+    override fun start(stage: Stage) {
+        stage.isResizable = false
+        super.start(stage)
+    }
+}
 
 class Root : View() {
     private val token = SimpleStringProperty("")
