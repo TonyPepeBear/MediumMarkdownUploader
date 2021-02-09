@@ -11,19 +11,6 @@ val client by lazy {
         .build()
 }
 
-fun main() {
-    val token = "2e8bb2a3707b096e29338da7d36bcf6ac684fe1c649822180ab82787c98af5352"
-//    println(getUserData(token))
-
-    print(
-        newPost(
-            token,
-            MediumApiPost("Testing", "# Testing\n``` kotlin\nvar i = 0\n```\n## H2\n", MediumApiPost.CONTENT_FORMAT_MD)
-        )
-    )
-}
-
-
 fun getUserData(token: String): MediumApiMe? {
     val request = Request.Builder()
         .url("https://api.medium.com/v1/me")
