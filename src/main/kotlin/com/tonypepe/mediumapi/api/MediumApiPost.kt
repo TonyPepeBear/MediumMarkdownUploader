@@ -1,4 +1,4 @@
-package com.tonypepe.mediumapi
+package com.tonypepe.mediumapi.api
 
 import com.google.gson.Gson
 

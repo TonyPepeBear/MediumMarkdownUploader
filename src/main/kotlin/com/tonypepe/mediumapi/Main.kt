@@ -1,10 +1,20 @@
 package com.tonypepe.mediumapi
 
+import tornadofx.*
 
 fun main() {
-    val mediumApiPost = MediumApiPost("Test", "# Test\ntttt\n## tt\n tttt", "markdown")
-    println(mediumApiPost.toJson())
-
-
-
+    launch<MyApp>()
 }
+
+class MyApp() : App()
+
+class Root : View() {
+    override val root = vbox {
+        button {
+            runAsync {
+
+            }
+        }
+    }
+}
+

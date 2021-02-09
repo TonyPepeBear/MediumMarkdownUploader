@@ -1,4 +1,4 @@
-package com.tonypepe.mediumapi
+package com.tonypepe.mediumapi.api
 
 data class MediumApiMe(
     val `data`: MediumMeData
