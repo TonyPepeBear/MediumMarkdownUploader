@@ -189,7 +189,7 @@ fun newPost(token: String, mediumApiPost: MediumApiPost): String {
 
 寫好方法後，最後再用 `TornadoFX` 寫 GUI，這邊就不講述 GUI 的部分，有興趣可以自己到 GitHub 上看專案的原始碼。
 
-## 程式碼區塊
+## 程式碼區塊
 
 因為 Medium 目前並不支援程式碼高亮，傳上去的程式碼區塊都會變成黑底的，目前我有想到的解法是在 Post 上去之前，就先將程式碼區塊都換成 GitHub Gist，但這就需要更複雜的方式解決問題了，有興趣的人可以自己試試看。
 
